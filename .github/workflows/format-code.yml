@@ -16,6 +16,7 @@ jobs:
         id: check_format
         run: npx prettier --check .
       - name: print status
+        if: always()
         run: echo ${{ steps.check_format.outcome }}
       - name: Format code
         if: failure()
