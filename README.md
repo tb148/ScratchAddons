@@ -1,4 +1,4 @@
-# Welcome to ScratchAddons extension's Github repo!
+#                       Welcome to ScratchAddons extension's Github repo!
 
 _Note, that this was written by a person, who has a general idea of what's going on, but can't really dive into any details :P_
 
