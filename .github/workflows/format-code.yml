@@ -13,7 +13,10 @@ jobs:
       - name: Install Prettier
         run: npm install --global prettier
       - name: Check format
+        id: check_format
         run: npx prettier --check .
+      - name: print status
+        run: echo ${{ steps.check_format.outcome }}
       - name: Format code
         if: failure()
         run: npx prettier --write .
